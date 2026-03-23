@@ -1,0 +1,26 @@
+[
+  {
+    "titulo": "Inteligência Artificial na Educação",
+    "descricao": "Estudo sobre o uso da IA em contextos educacionais.",
+    "autor": "Maria Silva",
+    "orientador": "Prof. João Costa",
+    "data": "2024",
+    "instituicao": "Universidade X",
+    "arquivo": "tcc1.pdf",
+    "palavrasChave": ["IA", "Educação", "Tecnologias"],
+    "area": "Tecnologia Educacional",
+    "capa": "capa1.jpg"
+  },
+  {
+    "titulo": "Segurança em Redes de Computadores",
+    "descricao": "Análise de segurança em redes corporativas.",
+    "autor": "Carlos Oliveira",
+    "orientador": "Prof. Ana Souza",
+    "data": "2023",
+    "instituicao": "Universidade Y",
+    "arquivo": "tcc2.pdf",
+    "palavrasChave": ["Redes", "Segurança", "Cibersegurança"],
+    "area": "Tecnologia da Informação",
+    "capa": "capa2.jpg"
+  }
+]
