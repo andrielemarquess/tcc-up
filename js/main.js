@@ -1,7 +1,7 @@
-import { mostrarPagina } from './navegacao.js';
-import { fazerLogin, verificarLogin } from './auth.js';
-import { abrirDetalhes, fecharModal } from './modal.js';
-import { enviarFormulario } from './form.js';
+import './js/navegacao.js';
+import './js/modal.js';
+import './js/form.js';
+import './js/auth.js';
 
 // BOTÕES MENU
 document.getElementById("btnRegistro")
