@@ -6,7 +6,7 @@ let tccsArray = []; // Array em memória para todos os TCCs
 // Carrega TCCs iniciais do JSON
 export async function carregarTCCs() {
     try {
-        const response = await fetch('tccs.json');
+        const response = await fetch('js/tccs.json');
         const tccs = await response.json();
         tccsArray = tccs;
         renderizarTCCs();
