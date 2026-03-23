@@ -1,5 +1,5 @@
 // js/main.js
-import { carregarTCCs } from './tcc.js';
+import { carregarTCCs, adicionarTCC } from './tcc.js';
 import { fecharModal } from './modal.js';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -34,4 +34,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Fechar modal
     document.querySelector('.fechar').addEventListener('click', fecharModal);
+
+    // Publicar TCC dinamicamente
+    const formPublicar = document.querySelector('#publicar form');
+    formPublicar.addEventListener('submit', (e) => {
+        e.preventDefault(); // evita recarregar página
+
+        const formData = new FormData(formPublicar);
+        const novoTCC = {
+            titulo: formData.get('titulo'),
+            autor: formData.get('autor'),
+            orientador: formData.get('orientador'),
+            area: formData.get('area'),
+            instituicao: formData.get('instituicao'),
+            data: formData.get('data_publicacao'),
+            descricao: formData.get('descricao'),
+            arquivo: URL.createObjectURL(formData.get('arquivo')), // cria URL temporária
+            palavrasChave: [], // pode adicionar campo extra se desejar
+            capa: 'default-capa.jpg' // capa padrão, pode personalizar
+        };
+
+        adicionarTCC(novoTCC);      // adiciona ao array e renderiza
+        formPublicar.reset();       // limpa formulário
+        mostrarPagina('home');      // volta para página inicial
+    });
 });
