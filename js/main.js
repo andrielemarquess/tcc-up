@@ -41,6 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault(); // evita recarregar página
 
         const formData = new FormData(formPublicar);
+        const arquivoFile = formData.get('arquivo');
+
         const novoTCC = {
             titulo: formData.get('titulo'),
             autor: formData.get('autor'),
@@ -49,9 +51,9 @@ document.addEventListener('DOMContentLoaded', () => {
             instituicao: formData.get('instituicao'),
             data: formData.get('data_publicacao'),
             descricao: formData.get('descricao'),
-            arquivo: URL.createObjectURL(formData.get('arquivo')), // cria URL temporária
-            palavrasChave: [], // pode adicionar campo extra se desejar
-            capa: 'default-capa.jpg' // capa padrão, pode personalizar
+            arquivo: arquivoFile ? URL.createObjectURL(arquivoFile) : '#',
+            palavrasChave: [],
+            capa: 'default-capa.jpg'
         };
 
         adicionarTCC(novoTCC);      // adiciona ao array e renderiza
