@@ -1,26 +1,50 @@
 [
   {
     "titulo": "Inteligência Artificial na Educação",
-    "descricao": "Estudo sobre o uso da IA em contextos educacionais.",
     "autor": "Maria Silva",
     "orientador": "Prof. João Costa",
-    "data": "2024",
-    "instituicao": "Universidade X",
-    "arquivo": "tcc1.pdf",
-    "palavrasChave": ["IA", "Educação", "Tecnologias"],
     "area": "Tecnologia Educacional",
+    "instituicao": "Universidade Pública do Porto",
+    "data": "2024-01-15",
+    "descricao": "Análise do uso de IA para personalização do ensino.",
+    "palavrasChave": ["IA", "Educação", "Tecnologias"],
+    "arquivo": "tcc1.pdf",
     "capa": "capa1.jpg"
   },
   {
     "titulo": "Segurança em Redes de Computadores",
-    "descricao": "Análise de segurança em redes corporativas.",
     "autor": "Carlos Oliveira",
     "orientador": "Prof. Ana Souza",
-    "data": "2023",
-    "instituicao": "Universidade Y",
-    "arquivo": "tcc2.pdf",
-    "palavrasChave": ["Redes", "Segurança", "Cibersegurança"],
     "area": "Tecnologia da Informação",
+    "instituicao": "Universidade Tecnológica Nacional",
+    "data": "2023-06-20",
+    "descricao": "Estudo sobre vulnerabilidades e técnicas de proteção em redes.",
+    "palavrasChave": ["Redes", "Segurança", "Cibersegurança"],
+    "arquivo": "tcc2.pdf",
     "capa": "capa2.jpg"
+  },
+  {
+    "titulo": "Desenvolvimento Web Moderno",
+    "autor": "Juliana Pereira",
+    "orientador": "Prof. Marcos Lima",
+    "area": "Desenvolvimento de Software",
+    "instituicao": "Faculdade de Computação Avançada",
+    "data": "2022-11-10",
+    "descricao": "Exploração das tecnologias modernas para desenvolvimento web.",
+    "palavrasChave": ["Web", "Frontend", "Backend"],
+    "arquivo": "tcc3.pdf",
+    "capa": "capa3.jpg"
+  },
+  {
+    "titulo": "Impactos das Mudanças Climáticas na Agricultura",
+    "autor": "Lucas Fernandes",
+    "orientador": "Prof. Helena Duarte",
+    "area": "Ciências Agrárias",
+    "instituicao": "Instituto de Ciências Ambientais",
+    "data": "2021-09-05",
+    "descricao": "Estudo sobre os efeitos das mudanças climáticas na produção agrícola.",
+    "palavrasChave": ["Clima", "Agricultura", "Sustentabilidade"],
+    "arquivo": "tcc4.pdf",
+    "capa": "capa4.jpg"
   }
 ]
