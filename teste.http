@@ -1,0 +1,76 @@
+### 🔹 Criar usuário
+POST http://localhost:3000/usuarios
+Content-Type: application/json
+
+{
+  "nome": "João",
+  "email": "joao@email.com",
+  "senha": "123456"
+}
+
+###
+
+### 🔹 Criar usuário (email duplicado - deve dar erro)
+POST http://localhost:3000/usuarios
+Content-Type: application/json
+
+{
+  "nome": "João 2",
+  "email": "joao@email.com",
+  "senha": "123456"
+}
+
+###
+
+### 🔹 Listar usuários (sem senha)
+GET http://localhost:3000/usuarios
+
+###
+
+### 🔹 Atualizar usuário
+PUT http://localhost:3000/usuarios/1
+Content-Type: application/json
+
+{
+  "nome": "João Atualizado",
+  "email": "joao2@email.com",
+  "senha": "novaSenha"
+}
+
+###
+
+### 🔹 Login correto
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "email": "joao2@email.com",
+  "senha": "novaSenha"
+}
+
+###
+
+### 🔹 Login com senha errada
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "email": "joao2@email.com",
+  "senha": "senhaErrada"
+}
+
+###
+
+### 🔹 Login com usuário inexistente
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "email": "naoexiste@email.com",
+  "senha": "123"
+}
+
+###
+
+### 🔹 Deletar usuário
+DELETE http://localhost:3000/usuarios/1
